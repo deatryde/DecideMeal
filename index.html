@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DecideMeal</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"
+          ><img src="img/logo.png" height="30" width="41"
+        /></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><span class="fa fa-home fa-lg"></span> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html"
+                ><span class="fa fa-address-card fa-lg"></span> Contact</a
+              >
+            </li>
+          </ul>
+          <span class="navbar-text" id="navsignup">
+            <a> <span class="fa fa-sign-in"></span> Login </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div id="signupModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Sign Up</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="firstname" class="col-md-3 col-form-label">
+                  First Name</label
+                >
+                <div class="col-md-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="First Name"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="lastname" class="col-md-3 col-form-label">
+                  First Name</label
+                >
+                <div class="col-md-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="telnum" class="col-12 col-md-3 col-form-label">
+                  Contact Telephone</label
+                >
+                <div class="col-4 col-md-4">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="areacode"
+                    name="areacode"
+                    placeholder="Area Code"
+                  />
+                </div>
+                <div class="col-5 col-md-5">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telnum"
+                    name="telnum"
+                    placeholder="Tel. Number"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="emailid" class="col-md-3 col-form-label">
+                  Email</label
+                >
+                <div class="col-md-9">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailid"
+                    name="emailid"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-md-3 col-md-10">
+                  <button type="submit" class="btn btn-warning">
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="jumbotron">
+      <div class="container">
+        <div class="row row-header">
+          <div class="col-12 col-sm-10">
+            <h1>Decide Meal</h1>
+            <p>
+              “One cannot think well, love well, sleep well, if one has not
+              dined well.”
+              <small><em>― Virginia Woolf, A Room of One's Own</em></small>
+            </p>
+          </div>
+          <div class="col-12 col-sm-2 align-self-center">
+            <img src="img/logo.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row-header text-center">
+          <h1>Feeling hungry?</h1>
+          <h3>We Decide for you click to generate meal</h3>
+          <button class="button-primary" id="get_meal">
+            Generate Meal 🍔
+          </button>
+        </div>
+      </div>
+      <div id="meal" class="row row-content meal"></div>
+    </div>
+
+    <footer class="footer page-footer">
+      <div class="container">
+        <div class="offset-md-3 col-md-8 pu-5">
+          <div class="mb-5 flex-center">
+            <a class="fb-ic">
+              <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+            <a class="tw-ic">
+              <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <a class="gplus-ic">
+              <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+            <a class="li-ic">
+              <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+            <a class="ins-ic">
+              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+            <a class="pin-ic">
+              <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright: Decide Meal
+      </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

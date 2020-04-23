@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-honor",
+  "version": "1.0.0",
+  "description": "honor project",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-social": "^5.1.1",
+    "collapsejs": "^0.1.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "Rahul dogra",
+  "license": "ISC"
+}
