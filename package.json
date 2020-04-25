@@ -6,13 +6,14 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bootstrap-social": "^5.1.1",
+    "chokidar": "^3.3.1",
     "collapsejs": "^0.1.6",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.0",
     "popper.js": "^1.14.3"
   },
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^1.2.0"
   },
   "scripts": {
     "start": "npm run lite",
