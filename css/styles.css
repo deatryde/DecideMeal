@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #bf2854;
+  background-color: #1e1d21;
   color: white;
 }
 
@@ -66,18 +66,18 @@ li {
 }
 
 .page-footer {
-  background-color: #511845;
-  color: floralwhite;
+  background-color: #262529;
+  color: white;
   padding: 20px;
   flex-shrink: 0;
 }
 
 .navbar {
-  background-color: #511845;
+  background-color: #262529;
 }
 
 .jumbotron {
-  background-color: #900c3f;
+  background-color: #262529;
 }
 
 h1 {
@@ -108,25 +108,25 @@ p {
 }
 
 .modal-header {
-  background-color: #511845;
-  color: antiquewhite;
+  background-color: #262529;
+  color: white;
 }
 
 .close {
-  color: antiquewhite;
+  color: white;
 }
 
 .modal-body {
-  background-color: #900c3f;
-  color: antiquewhite;
+  background-color: white;
+  color: black;
 }
 
 .card-header {
-  background-color: #511845;
-  color: antiquewhite;
+  background-color: #262529;
+  color: white;
 }
 
 .card-body {
-  background-color: #ffab99;
+  background-color: white;
   color: black;
 }
