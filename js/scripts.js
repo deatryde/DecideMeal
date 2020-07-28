@@ -67,9 +67,3 @@ const createMeal = (meal) => {
 
   meal_container.innerHTML = newInnerHTML;
 };
-
-$(document).ready(function () {
-  $("#navsignup").click(function () {
-    $("#signupModal").modal("toggle");
-  });
-});
